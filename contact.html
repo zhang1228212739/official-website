@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | Japan Foreign Business Management Support Association</title>
+  <meta name="description" content="Contact Japan Foreign Business Management Support Association">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body class="lang-ja contact-page">
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/my-logo.1.jpg" class="logo-image" alt="全日本外国人経営管理支援会">
+      <div class="logo-jp jp">全日本外国人経営管理<br>支援会</div>
+      <div class="logo-tagline jp" style="margin-top:6px;color:#a47c00;font-size:13px;font-weight:700;letter-spacing:2px;">公益性非営利組織</div>
+      <div class="logo-cn cn">全日本外国人经营管理<br>支援会</div>
+      <div class="logo-tagline cn" style="margin-top:6px;color:#a47c00;font-size:13px;font-weight:700;letter-spacing:2px;">公益性非营利组织</div>
+      <div class="logo-en en">Japan Foreign Business<br>Management Support Association</div>
+      <div class="logo-tagline en" style="margin-top:6px;color:#a47c00;font-size:12px;font-weight:700;letter-spacing:1px;">Public-interest Nonprofit Organization</div>
+    </a>
+
+    <nav class="navigation">
+      <a href="about.html"><span class="jp">私たちについて</span><span class="cn">关于我们</span><span class="en">About Us</span></a>
+      <a href="philosophy.html"><span class="jp">理念</span><span class="cn">理念</span><span class="en">Philosophy</span></a>
+      <a href="services.html"><span class="jp">事業内容</span><span class="cn">业务内容</span><span class="en">Services</span></a>
+      <a href="support.html"><span class="jp">外国人経営支援</span><span class="cn">外国人经营支援</span><span class="en">Business Support</span></a>
+      <a href="contact.html" class="active"><span class="jp">お問い合わせ</span><span class="cn">联系我们</span><span class="en">Contact</span></a>
+    </nav>
+
+    <div class="language-switch">
+      <button type="button" data-language="ja">日本語</button>
+      <button type="button" data-language="zh">中文</button>
+      <button type="button" data-language="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="contact-hero">
+    <div class="contact-hero-inner">
+      <p class="contact-eyebrow">CONTACT</p>
+
+      <h1>
+        <span class="jp">お問い合わせ</span>
+        <span class="cn">联系我们</span>
+        <span class="en">CONTACT</span>
+      </h1>
+
+      <p class="contact-intro jp">ご相談・お問い合わせはこちらから。</p>
+      <p class="contact-intro cn">如有咨询需求，请通过以下方式联系我们。</p>
+      <p class="contact-intro en">For inquiries or consultation, please contact us through the form below.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-form-heading">
+        <h2>
+          <span class="jp">お問い合わせ</span>
+          <span class="cn">请注册</span>
+          <span class="en">Inquiry Form</span>
+        </h2>
+
+        <p>
+          <span class="jp">必要事項をご入力ください。</span>
+          <span class="cn">请填写以下必要信息。</span>
+          <span class="en">Please complete the required fields below.</span>
+        </p>
+      </div>
+
+      <form
+        id="contact-form"
+        class="contact-form"
+        action="https://formsubmit.co/staffstar2025@gmail.com"
+        method="POST"
+        novalidate
+      >
+        <input type="hidden" name="_subject" value="全日本外国人経営管理支援会｜新しいお問い合わせ">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-group">
+          <label for="name">
+            <span class="jp">お名前 <em>必須</em></span>
+            <span class="cn">姓名 <em>必填</em></span>
+            <span class="en">Name <em>Required</em></span>
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            data-placeholder-ja="お名前を入力してください"
+            data-placeholder-cn="请输入姓名"
+            data-placeholder-en="Enter your name"
+          >
+
+          <p class="field-error" id="name-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-group nationality-group">
+          <label for="country-select-trigger">
+            <span class="jp">国籍<em>必須</em></span>
+            <span class="cn">国籍<em>必填</em></span>
+            <span class="en">Nationality<em>Required</em></span>
+</label>
+          </label>
+
+          <div class="country-select" id="country-select">
+            <button
+              type="button"
+              class="country-select-trigger"
+              id="country-select-trigger"
+              aria-expanded="false"
+              aria-controls="country-dropdown"
+            >
+              <span id="country-selected-text" data-ja="選択してください" data-cn="请选择国籍" data-en="Select nationality">選択してください</span>
+              <span class="country-arrow" aria-hidden="true"></span>
+            </button>
+
+            <div class="country-dropdown" id="country-dropdown" hidden>
+              <input
+                type="search"
+                id="country-search"
+                class="country-search"
+                autocomplete="off"
+                data-placeholder-ja="国名で検索"
+                data-placeholder-cn="搜索国家或地区"
+                data-placeholder-en="Search country or region"
+              >
+
+              <div class="country-options" id="country-options" role="listbox">
+                <button type="button" class="country-option" data-value="Afghanistan">Afghanistan / アフガニスタン / 阿富汗</button>
+                <button type="button" class="country-option" data-value="Albania">Albania / アルバニア / 阿尔巴尼亚</button>
+                <button type="button" class="country-option" data-value="Algeria">Algeria / アルジェリア / 阿尔及利亚</button>
+                <button type="button" class="country-option" data-value="Argentina">Argentina / アルゼンチン / 阿根廷</button>
+                <button type="button" class="country-option" data-value="Australia">Australia / オーストラリア / 澳大利亚</button>
+                <button type="button" class="country-option" data-value="Austria">Austria / オーストリア / 奥地利</button>
+                <button type="button" class="country-option" data-value="Bangladesh">Bangladesh / バングラデシュ / 孟加拉国</button>
+                <button type="button" class="country-option" data-value="Belgium">Belgium / ベルギー / 比利时</button>
+                <button type="button" class="country-option" data-value="Brazil">Brazil / ブラジル / 巴西</button>
+                <button type="button" class="country-option" data-value="Cambodia">Cambodia / カンボジア / 柬埔寨</button>
+                <button type="button" class="country-option" data-value="Canada">Canada / カナダ / 加拿大</button>
+                <button type="button" class="country-option" data-value="Chile">Chile / チリ / 智利</button>
+                <button type="button" class="country-option" data-value="China">China / 中国 / 中国</button>
+                <button type="button" class="country-option" data-value="Colombia">Colombia / コロンビア / 哥伦比亚</button>
+                <button type="button" class="country-option" data-value="Czech Republic">Czech Republic / チェコ / 捷克</button>
+                <button type="button" class="country-option" data-value="Denmark">Denmark / デンマーク / 丹麦</button>
+                <button type="button" class="country-option" data-value="Egypt">Egypt / エジプト / 埃及</button>
+                <button type="button" class="country-option" data-value="Finland">Finland / フィンランド / 芬兰</button>
+                <button type="button" class="country-option" data-value="France">France / フランス / 法国</button>
+                <button type="button" class="country-option" data-value="Germany">Germany / ドイツ / 德国</button>
+                <button type="button" class="country-option" data-value="Ghana">Ghana / ガーナ / 加纳</button>
+                <button type="button" class="country-option" data-value="Greece">Greece / ギリシャ / 希腊</button>
+                <button type="button" class="country-option" data-value="Hong Kong">Hong Kong / 中国香港 / 中国香港</button>
+                <button type="button" class="country-option" data-value="India">India / インド / 印度</button>
+                <button type="button" class="country-option" data-value="Indonesia">Indonesia / インドネシア / 印度尼西亚</button>
+                <button type="button" class="country-option" data-value="Iran">Iran / イラン / 伊朗</button>
+                <button type="button" class="country-option" data-value="Iraq">Iraq / イラク / 伊拉克</button>
+                <button type="button" class="country-option" data-value="Ireland">Ireland / アイルランド / 爱尔兰</button>
+                <button type="button" class="country-option" data-value="Italy">Italy / イタリア / 意大利</button>
+                <button type="button" class="country-option" data-value="Japan">Japan / 日本 / 日本</button>
+                <button type="button" class="country-option" data-value="Jordan">Jordan / ヨルダン / 约旦</button>
+                <button type="button" class="country-option" data-value="Kazakhstan">Kazakhstan / カザフスタン / 哈萨克斯坦</button>
+                <button type="button" class="country-option" data-value="Kenya">Kenya / ケニア / 肯尼亚</button>
+                <button type="button" class="country-option" data-value="South Korea">South Korea / 韓国 / 韩国</button>
+                <button type="button" class="country-option" data-value="Laos">Laos / ラオス / 老挝</button>
+                <button type="button" class="country-option" data-value="Malaysia">Malaysia / マレーシア / 马来西亚</button>
+                <button type="button" class="country-option" data-value="Mexico">Mexico / メキシコ / 墨西哥</button>
+                <button type="button" class="country-option" data-value="Mongolia">Mongolia / モンゴル / 蒙古</button>
+                <button type="button" class="country-option" data-value="Morocco">Morocco / モロッコ / 摩洛哥</button>
+                <button type="button" class="country-option" data-value="Myanmar">Myanmar / ミャンマー / 缅甸</button>
+                <button type="button" class="country-option" data-value="Nepal">Nepal / ネパール / 尼泊尔</button>
+                <button type="button" class="country-option" data-value="Netherlands">Netherlands / オランダ / 荷兰</button>
+                <button type="button" class="country-option" data-value="New Zealand">New Zealand / ニュージーランド / 新西兰</button>
+                <button type="button" class="country-option" data-value="Nigeria">Nigeria / ナイジェリア / 尼日利亚</button>
+                <button type="button" class="country-option" data-value="Norway">Norway / ノルウェー / 挪威</button>
+                <button type="button" class="country-option" data-value="Pakistan">Pakistan / パキスタン / 巴基斯坦</button>
+                <button type="button" class="country-option" data-value="Peru">Peru / ペルー / 秘鲁</button>
+                <button type="button" class="country-option" data-value="Philippines">Philippines / フィリピン / 菲律宾</button>
+                <button type="button" class="country-option" data-value="Poland">Poland / ポーランド / 波兰</button>
+                <button type="button" class="country-option" data-value="Portugal">Portugal / ポルトガル / 葡萄牙</button>
+                <button type="button" class="country-option" data-value="Russia">Russia / ロシア / 俄罗斯</button>
+                <button type="button" class="country-option" data-value="Saudi Arabia">Saudi Arabia / サウジアラビア / 沙特阿拉伯</button>
+                <button type="button" class="country-option" data-value="Singapore">Singapore / シンガポール / 新加坡</button>
+                <button type="button" class="country-option" data-value="South Africa">South Africa / 南アフリカ / 南非</button>
+                <button type="button" class="country-option" data-value="Spain">Spain / スペイン / 西班牙</button>
+                <button type="button" class="country-option" data-value="Sri Lanka">Sri Lanka / スリランカ / 斯里兰卡</button>
+                <button type="button" class="country-option" data-value="Sweden">Sweden / スウェーデン / 瑞典</button>
+                <button type="button" class="country-option" data-value="Switzerland">Switzerland / スイス / 瑞士</button>
+                <button type="button" class="country-option" data-value="Taiwan">Taiwan / 台湾 / 中国台湾</button>
+                <button type="button" class="country-option" data-value="Thailand">Thailand / タイ / 泰国</button>
+                <button type="button" class="country-option" data-value="Turkey">Turkey / トルコ / 土耳其</button>
+                <button type="button" class="country-option" data-value="Ukraine">Ukraine / ウクライナ / 乌克兰</button>
+                <button type="button" class="country-option" data-value="United Arab Emirates">United Arab Emirates / アラブ首長国連邦 / 阿联酋</button>
+                <button type="button" class="country-option" data-value="United Kingdom">United Kingdom / イギリス / 英国</button>
+                <button type="button" class="country-option" data-value="United States">United States / アメリカ合衆国 / 美国</button>
+                <button type="button" class="country-option" data-value="Uzbekistan">Uzbekistan / ウズベキスタン / 乌兹别克斯坦</button>
+                <button type="button" class="country-option" data-value="Vietnam">Vietnam / ベトナム / 越南</button>
+                <button type="button" class="country-option" data-value="Other">Other / その他 / 其他</button>
+              </div>
+            </div>
+          </div>
+
+          <input type="hidden" id="nationality" name="nationality" value="">
+        </div>
+
+        <fieldset class="form-group contact-method-group">
+          <legend>
+            <span class="jp">希望する連絡方法 <em>必須</em></span>
+            <span class="cn">联系方式 <em>必填</em></span>
+            <span class="en">Preferred Contact Method <em>Required</em></span>
+          </legend>
+
+          <div class="contact-method-options">
+            <label class="contact-method-option">
+              <input type="radio" name="contact-method" value="email">
+              <span class="radio-mark"></span>
+              <span class="jp">メール</span>
+              <span class="cn">邮箱</span>
+              <span class="en">Email</span>
+            </label>
+
+            <label class="contact-method-option">
+              <input type="radio" name="contact-method" value="phone">
+              <span class="radio-mark"></span>
+              <span class="jp">電話</span>
+              <span class="cn">电话</span>
+              <span class="en">Phone</span>
+            </label>
+
+            <label class="contact-method-option">
+              <input type="radio" name="contact-method" value="line">
+              <span class="radio-mark"></span>
+              <span>LINE</span>
+            </label>
+
+            <label class="contact-method-option">
+              <input type="radio" name="contact-method" value="wechat">
+              <span class="radio-mark"></span>
+              <span>WeChat</span>
+            </label>
+          </div>
+
+          <p class="field-error" id="contact-method-error" aria-live="polite"></p>
+        </fieldset>
+
+        <div class="form-group dynamic-contact-field" id="email-field" hidden>
+          <label for="email">
+            <span class="jp">メールアドレス <em>必須</em></span>
+            <span class="cn">邮箱 <em>必填</em></span>
+            <span class="en">Email Address <em>Required</em></span>
+          </label>
+          <input type="email" id="email" name="email" disabled data-placeholder-ja="メールアドレスを入力してください" data-placeholder-cn="请输入邮箱地址" data-placeholder-en="Enter your email address">
+          <p class="field-error" id="email-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-group dynamic-contact-field" id="phone-field" hidden>
+          <label for="phone">
+            <span class="jp">電話番号 <em>必須</em></span>
+            <span class="cn">电话号码 <em>必填</em></span>
+            <span class="en">Phone Number <em>Required</em></span>
+          </label>
+          <input type="tel" id="phone" name="phone" disabled autocomplete="tel" data-placeholder-ja="国番号を含む電話番号を入力してください" data-placeholder-cn="请输入含国际区号的电话号码" data-placeholder-en="Enter your phone number with country code">
+          <p class="field-error" id="phone-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-group dynamic-contact-field" id="line-field" hidden>
+          <label for="line">
+            <span>LINE ID <em class="jp">必須</em><em class="cn">必填</em><em class="en">Required</em></span>
+          </label>
+          <input type="text" id="line" name="line" disabled data-placeholder-ja="LINE IDを入力してください" data-placeholder-cn="请输入 LINE ID" data-placeholder-en="Enter your LINE ID">
+          <p class="field-error" id="line-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-group dynamic-contact-field" id="wechat-field" hidden>
+          <label for="wechat">
+            <span>WeChat ID <em class="jp">必須</em><em class="cn">必填</em><em class="en">Required</em></span>
+          </label>
+          <input type="text" id="wechat" name="wechat" disabled data-placeholder-ja="WeChat IDを入力してください" data-placeholder-cn="请输入微信号" data-placeholder-en="Enter your WeChat ID">
+          <p class="field-error" id="wechat-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="inquiry">
+            <span class="jp">ご相談内容 <em>必須</em></span>
+            <span class="cn">咨询内容 <em>必填</em></span>
+            <span class="en">Inquiry <em>Required</em></span>
+          </label>
+
+          <textarea id="inquiry" name="inquiry" rows="7" data-placeholder-ja="ご相談内容をご記入ください" data-placeholder-cn="请输入您的咨询内容" data-placeholder-en="Please describe your inquiry"></textarea>
+          <p class="field-error" id="inquiry-error" aria-live="polite"></p>
+        </div>
+
+        <div class="privacy-group">
+          <label class="privacy-label">
+            <input type="checkbox" id="privacy" name="privacy">
+            <span class="checkbox-mark"></span>
+            <span class="jp"><a href="privacy.html">個人情報保護方針</a>に同意する</span>
+            <span class="cn">同意<a href="privacy.html">隐私政策</a></span>
+            <span class="en">I agree to the <a href="privacy.html">Privacy Policy</a></span>
+          </label>
+
+          <p class="field-error" id="privacy-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-submit-area">
+          <button type="submit" class="contact-submit">
+            <span class="jp">送信する</span>
+            <span class="cn">提交</span>
+            <span class="en">Submit</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="social-links" aria-label="Social media links">
+<a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <img class="social-icon" src="https://cdn.simpleicons.org/instagram/111111" alt="">
+    <span>Instagram</span>
+</a>
+
+<a class="social-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <img class="social-icon" src="https://cdn.simpleicons.org/youtube/111111" alt="">
+    <span>YouTube</span>
+</a>
+
+<a class="social-link" href="https://www.xiaohongshu.com/" target="_blank" rel="noopener noreferrer" aria-label="小红书">
+    <img class="social-icon" src="https://cdn.simpleicons.org/xiaohongshu/111111" alt="">
+    <span>小红书</span>
+</a>
+
+<a class="social-link" href="https://www.douyin.com/" target="_blank" rel="noopener noreferrer" aria-label="抖音">
+    <img class="social-icon" src="https://cdn.simpleicons.org/tiktok/111111" alt="">
+    <span>抖音</span>
+</a>
+
+<a class="social-link" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+    <img class="social-icon" src="https://cdn.simpleicons.org/tiktok/111111" alt="">
+    <span>TikTok</span>
+</a>
+  </div>
+
+  <p>&copy; Japan Foreign Business Management Support Association</p>
+</footer>
+
+<script src="language.js"></script>
+<script src="contact.js"></script>
+
+</body>
+</html>
